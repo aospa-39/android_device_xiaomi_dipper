@@ -8,6 +8,10 @@ cc_binary {
     name: "android.hardware.light-service.xiaomi_dipper",
     defaults: ["hidl_defaults"],
     vendor: true,
+    overrides: [
+        "android.hardware.light@2.0-service",
+        "android.hardware.lights-service.qti",
+    ],
     relative_install_path: "hw",
     init_rc: ["android.hardware.light-service.xiaomi_dipper.rc"],
     vintf_fragments: ["android.hardware.light-service.xiaomi_dipper.xml"],
