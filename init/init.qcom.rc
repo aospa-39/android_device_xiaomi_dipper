@@ -207,6 +207,9 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
+    # Default enable uicc_se
+    setprop persist.vendor.radio.uicc_se_enabled true
+
     # USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -572,11 +575,6 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
-
-service mmbn-daemon /vendor/bin/mmbn-daemon
-    class main
-    disabled
-    oneshot
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
     class core
