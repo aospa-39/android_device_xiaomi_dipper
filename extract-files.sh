@@ -62,10 +62,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/pm-service)
-            [ "$2" = "" ] && return 0
-            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
-            ;;
         vendor/lib/camera/components/com.qti.node.watermark.so)
             [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
