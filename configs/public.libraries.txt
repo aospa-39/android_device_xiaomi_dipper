@@ -29,4 +29,6 @@ libmisegment_front_845.so
 libalCFR.so
 libbeauty.so
 libprotobuf-cpp-full.so
+libprotobuf-cpp-full-3.9.1.so
 libprotobuf-cpp-lite.so
+libprotobuf-cpp-lite-3.9.1.so
