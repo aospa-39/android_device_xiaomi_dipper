@@ -62,25 +62,13 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/etc/permissions/qcrilhook.xml)
-            [ "$2" = "" ] && return 0
-            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
-            ;;
-        system_ext/etc/permissions/qti_libpermissions.xml)
-            [ "$2" = "" ] && return 0
-            sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
-            ;;
-        system_ext/lib64/lib-imsvideocodec.so)
-            [ "$2" = "" ] && return 0
-            grep -q "libgui_shim.so" "${2}" || ${PATCHELF} --add-needed "libgui_shim.so" "${2}"
-            ;;
         vendor/bin/pm-service)
             [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
         vendor/lib/camera/components/com.qti.node.watermark.so)
             [ "$2" = "" ] && return 0
-            grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex-v29.so" "${2}" || ${PATCHELF} --add-needed "libpiex-v29.so" "${2}"
             ;;
         *)
             return 1
