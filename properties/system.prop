@@ -3,7 +3,6 @@ audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
-ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=11
 
 # Bluetooth
@@ -21,9 +20,11 @@ persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Display
+ro.surface_flinger.has_wide_color_display=true
+
 # Display post-processing
 ro.qualcomm.cabl=0
-ro.surface_flinger.has_wide_color_display=true
 ro.vendor.display.ad=1
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
