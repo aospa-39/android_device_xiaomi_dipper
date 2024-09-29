@@ -66,10 +66,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
-        vendor/lib/camera/components/com.qti.node.watermark.so)
-            [ "$2" = "" ] && return 0
-            grep -q "libpiex-v29.so" "${2}" || ${PATCHELF} --add-needed "libpiex-v29.so" "${2}"
-            ;;
         *)
             return 1
             ;;
