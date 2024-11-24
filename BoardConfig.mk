@@ -56,10 +56,7 @@ BOARD_BOOT_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
-    console=ttyMSM0,115200n8 \
-    earlycon=msm_geni_serial,0xA84000 \
     androidboot.hardware=qcom \
-    androidboot.console=ttyMSM0 \
     msm_rtb.filter=0x237 \
     ehci-hcd.park=3 \
     lpm_levels.sleep_disabled=1 \
