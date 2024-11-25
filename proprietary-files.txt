@@ -418,7 +418,6 @@ vendor/lib/libops.so|a1d4a06c64ea0782f2f61ce8badd14238325d72f
 vendor/lib/libqisl.so|8da3650f2c43fd1588ea24cdf8b51ae337dc824d
 vendor/lib/librpmb.so|95a388eaff556447fa7b374cde5768bd3d9915c2
 vendor/lib/libsecureui.so|13162732b9990a9f8bdc26566403a53e357807c9
-vendor/lib/libsecureui_svcsock.so|fd78cdbe3f2e2349b07872cc1116f90a519db054
 vendor/lib/libssd.so|020e0fa5d6ecf28125911d3bad4519556d2d9b31
 vendor/lib/libtzdrmgenprov.so|801f47e12d529189b2d30dd4f373ba267b250859
 vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
