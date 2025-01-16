@@ -311,7 +311,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.xiaomi_dipper
 
 # Listen
 PRODUCT_VENDOR_PROPERTIES += \
