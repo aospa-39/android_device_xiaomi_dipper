@@ -663,6 +663,9 @@ vendor/lib64/libOmxQcelp13Dec.so|65952f3680f9865ea601de764037637d6ee8c990
 vendor/lib64/libOmxVpp.so|a87440c7838b6f03726d97a4a52b695bb4c6e8f8
 vendor/lib64/libOmxWmaDec.so|7b2a714a74fea03a403a7d0edef61db2f70d7d4e
 
+# Perf - from taimen - RP1A.201005.004.A1
+vendor/lib/libqti-perfd-client.so|08b0cd20dbc79645ee73ea4fdc5221d41d09588a
+
 # Peripheral manager - from PNX - RKQ1.200906.002
 vendor/bin/pm-proxy|832cbe7995de8177a2ef5bdf3f145131dfe828d4
 vendor/bin/pm-service|28f5e8d8f98c8e97941f514bafdc0b369cc5b600
