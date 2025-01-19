@@ -173,12 +173,18 @@ ro.netflix.bsp_rev=Q845-14477-1
 
 # Network manager
 persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
+persist.vendor.data.profile_update=true
 persist.vendor.radio.enableadvancedscan=false
+telephony.lteOnCdmaDevice=0
+
+# RCS
+persist.rcs.supported=1
 
 # USB
 vendor.usb.diag.func.name=diag
