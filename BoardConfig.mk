@@ -79,6 +79,10 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/xiaomi/mi845_defconfig vendor/xiaomi/dipper.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 
+TARGET_KERNEL_CLANG_VERSION := r487747c
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
